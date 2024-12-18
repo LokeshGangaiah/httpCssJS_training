@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- This is the title of the page -->
+ <style>
+  /* This is for Tag selectors */
+  img {
+    border: solid 1px #777; 
+  }
+    /* This is for Class selectors */
+  .tutorial {
+    border: solid 1px #777;
+  }
+    /* This is for ID selectors */
+  #tutorial-1 {
+    background-color: aliceblue;
+  }
+    /* This is for Attribute selectors */
+  img[src="https://via.placeholder.com/150"] {
+    border: solid 2px #393;
+  }
+      /* LIST SELECTOR - h1 and h2 headings same color  */
+  h1,
+  h2 {
+    color: #393;
+  }
+          /* LIST SELECTOR - class selector(tutorial) and tag selector(h1) headings same color  */
+  .tutorial,
+  h1 {
+    border: solid 1px #ccc;
+  }
+  /*combinators selectors class name and paragraph  */
+  .tutorial > p {
+    font-size: 1.5em;
+  }
+ </style>
+</head>
+<body>
+  <h1>Intro to CSS</h1>
+  <p>There tutorials teach your CSS.</p>
+  <div class="tutorial" id="tutorial-1">
+    <h2>Tutorial 1</h2>
+    <img src="https://via.placeholder.com/150">
+    <p>To begin with tutorial 1...</p>
+  </div>
+  <div class="tutorial" id="tutorial-2">
+    <h2>Tutorial 2</h2>
+    <img src="https://via.placeholder.com/150">
+    <p>To begin with tutorial 2...</p>
+  </div>
+   <!-- To use styles inside the tag -->
+  <div style="width: 100px; border: solid 1px #333; display: inline;"> Hello</div>
+  <div style="width: 100px; border: solid 1px #333; display: inline;"> World</div>
+</body>
+</html>

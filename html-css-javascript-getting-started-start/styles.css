@@ -1,0 +1,21 @@
+body {
+  background-color:violet
+}
+main {
+  background-color: bisque;
+  width: 10%;
+}
+div {
+  background-color: #39f;
+  color: blueviolet;
+  width: 30;
+}
+h1 {
+  color: brown;
+}
+h1 {
+  color:yellow;
+}
+.heading2 { 
+  color: #39f;
+}

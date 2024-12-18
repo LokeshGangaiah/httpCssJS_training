@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="click-me"> Click Me</button>
+  <script>
+    window.addEventListener("DOMContentLoaded", function(e) {
+      console.log("The page is loaded");
+      let btn = document.querySelector("#click-me");
+      btn.addEventListener("click", function(e) {
+        console.log("it did click");
+      });
+    });
+
+    window.addEventListener("orientationchange", function(e) {
+      let screen = window.screen;
+      let angle = screen.orientation.angle;
+      let type = screen.orientation.type;
+      console.log(`angle: ${ angle}, type: ${ type}`);
+    });
+  </script>
+</body>
+</html>

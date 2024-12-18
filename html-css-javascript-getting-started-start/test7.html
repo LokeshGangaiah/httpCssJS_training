@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .card {
+  width: 30%;
+  padding: 1px;
+  margin: 10px;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  display: inline-block;;
+}
+</style>
+<body>
+  <section id="craig" class="card">
+    <h1>Craig</h1>
+    <ul>
+      <li><a href="https://twitter.com/craigshowmaker" class="tag">Twitter</a></li>
+      <li><a href="https://github.com/craigshowmaker" class="tag">Github</a></li>
+    </ul>
+  </section>
+  <section id="mark" class="card">
+    <h1>Mark</h1>
+      <ul>
+        <li><a href="https://twitter.com/mark"class="tag">Twitter</a></li>
+        <li><a href="https://github.com/mark"class="tag">Github</a></li>
+      </ul>
+  </section>
+  <script>
+    let links = document.querySelectorAll(".tag");
+    links.forEach(function(link) {
+      link.setAttribute("target", "_blank");
+    });
+  </script>
+</body>
+</html>

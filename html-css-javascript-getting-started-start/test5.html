@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .columns {
+    width: 100%;
+    border: solid 1px #444;
+    /*display flex will help to devide the columns equally */
+    display: flex;
+  }
+/* example for columns with float */ 
+/* also for a child selector div */
+/* without the use of display: flex above you can see a small gap in the column table*/
+  .columns > div {
+    width: 49%;
+    border: solid 1px #ddd;
+    float: left;
+    flex: 1
+  }
+/* this will have more column space for column2 */ 
+    .columns > div:nth-of-type(2)
+    {
+      flex: 2;
+    }
+
+</style>
+<body>
+  <div class="columns">
+    <div>Column 1</div>
+    <div>Column 2</div>
+    <div>Column 3</div>
+  </div>
+</body>
+</html>
